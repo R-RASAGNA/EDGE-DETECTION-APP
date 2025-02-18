@@ -1,0 +1,57 @@
+Edge Detection Web Application
+This is a simple Flask-based web application that allows users to upload an image, apply edge detection using OpenCV, and display the processed result. The application also supports uploading images from Google Drive.
+
+Requirements
+Before starting, ensure you have the following installed:
+
+Python 3.x
+pip (Python's package installer)
+
+Required Libraries
+You need the following Python libraries:
+
+- Flask
+- OpenCV
+- Pillow
+- werkzeug
+To install them, run the following command:
+pip install flask opencv-python pillow werkzeug
+
+
+*Setup Instructions*
+Follow the steps below to set up and run the application.
+
+Step 1: Clone the Repository
+Clone the repository (or create a folder for the project) and set it up as follows:
+mkdir edge_detection_app
+cd edge_detection_app
+Step 2: Set Up Python Application
+Create a Python file, e.g., app.py, and paste the Flask application code into it. The Flask app will handle image uploading, processing the image using OpenCV for edge detection, and displaying the result.
+
+Make sure to create a templates folder inside your project folder for HTML files, and create the necessary HTML files for uploading images and displaying results.
+
+Step 3: Run the Flask Application
+To run the application: Open a terminal/command prompt.
+Navigate to the project folder: cd edge_detection_app
+Run the Flask app: python app.py
+
+Step 4: Open the Application
+The app will start on http://127.0.0.1:5000/. Open this URL in your browser.
+You can now upload an image, apply edge detection, and view the results.
+Folder Structure
+Here’s what your folder structure should look like:
+
+
+edge_detection_app/
+│
+├── app.py                # Main application file
+├── uploads/              # Folder to store uploaded images
+├── outputs/              # Folder to store processed images
+├── templates/            # Folder for HTML files
+│   ├── index.html        # HTML for uploading images
+│   └── result.html       # HTML for displaying results
+└── README.md             # This file
+
+Notes
+Ensure that the uploads and outputs folders exist in the project directory. If they don’t, the Flask app will create them automatically.
+The app uses OpenCV to process the uploaded image, so make sure you have the required libraries installed.
